@@ -6,17 +6,16 @@ using namespace std;
 bool isThree(int a);
 int gcd(int a, int b);
 
-int main() {
-
+int main() 
+{
     cout << "/////////Is Three////////" << endl;
     bool input = false;
     cin >> input;
-    cout << input << endl;
+    cout << (bool) input << endl;
     cout << "////////////////////" << endl;
 
-
     cout << "////////GCD/////////" << endl;
-    int a, b;
+    int a, b = 0;
     cout << "Input A: ";
     cin >> a;
     cout << "Input B: ";
@@ -24,11 +23,11 @@ int main() {
     cout << "The GCD of " << a << " and " << b << " is " << gcd(a, b) << endl;
     cout << "////////////////////" << endl;
 
-
     return 0;
 }
 
-bool isThree(int a){
+bool isThree(int a)
+{
     if(a == 3)
         return true;
     else {
@@ -37,7 +36,8 @@ bool isThree(int a){
 }
 
 //Calculates the GCD Recursively
-int gcd(int a, int b) {
+int gcd(int a, int b) 
+{
     if(b == 0)
         return a;
     else {
