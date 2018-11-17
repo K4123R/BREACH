@@ -9,22 +9,25 @@ int gcd(int a, int b);
 int main() 
 {
     cout << "/////////Is Three////////" << endl;
-    bool input = false;
+    int input;
     cin >> input;
-    cout << (bool) input << endl;
-    cout << "////////////////////" << endl;
+    cout << isThree(input) << endl;
+    cout << "/////////////////////////" << endl;
 
-    cout << "////////GCD/////////" << endl;
-    int a, b = 0;
+    cout << "" << endl;
+
+    cout << "///////////GCD///////////" << endl;
+    int a, b;
     cout << "Input A: ";
     cin >> a;
     cout << "Input B: ";
     cin >> b;
     cout << "The GCD of " << a << " and " << b << " is " << gcd(a, b) << endl;
-    cout << "////////////////////" << endl;
+    cout << "/////////////////////////" << endl;
 
     return 0;
 }
+
 
 bool isThree(int a)
 {
