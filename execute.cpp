@@ -28,7 +28,6 @@ int main()
     return 0;
 }
 
-
 bool isThree(int a)
 {
     if(a == 3)
